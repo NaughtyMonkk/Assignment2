@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>produce Book</title>
+    <style>
+      body{
+            background-color: black;
+          }
+    
+          a {
+            color: cyan;
+            
+          }
+          h1{
+    
+            text-align: center;
+            color: white;
+            font-size: xx-large;
+            font-weight: bolder;
+            font-style: italic;
+          }
+          #form{
+            text-align: center;
+            font-size: xx-large;
+            color: white;
+          }
+          .hey{
+            text-align: center;
+            font-weight: bold;
+            font-size: xx-large;
+            
+          }
+    </style>
+  </head>
+  <body>
+    <h1>Please type in the  Details to add a book</h1>
+    <form id="form" action="/produce" method="POST">
+      <label for="bname">Name:</label>
+      <input type="text" required id="bname" name="name" /><br /><br />
+      <label for="author">Author:</label>
+      <input type="text" required id="author" name="author" /><br /><br />
+      <label for="link">Amazon Link:</label>
+      <input type="url" required id="link" name="link" /><br /><br />
+      <input type="submit" value="Add" />
+    </form>
+    <div class="hey">
+      <a href="/home">List all Books</a>
+      <a href="/AddNewBook">Add a Book</a>
+      <a href="/DeleteABook">Delete a Book</a>
+    </div>
+  </body>
+</html>

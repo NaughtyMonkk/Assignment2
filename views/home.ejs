@@ -1,0 +1,46 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title>home</title>
+<style>
+  body{
+        background-color: black;
+      }
+
+      a {
+        color: cyan;
+        
+      }
+      h1{
+
+        text-align: center;
+        color: white;
+        font-size: xx-large;
+        font-weight: bolder;
+        font-style: italic;
+      }
+      #form{
+        text-align: center;
+        font-size: xx-large;
+      }
+      .hey{
+        text-align: center;
+        font-weight: bold;
+        
+      }
+</style>
+  
+    </head>
+    <body>
+        <h1>Select the book to view the details </h1>
+        <div id="form">
+          <% books.forEach(k=> { %>
+            <a href="/books/<%=k.id %>"> <p id="book"><%= k.name %></p></a>
+            <% }); %>
+            <div class="hey">
+              <a href="/home">List all Books &nbsp; &nbsp;</a>
+              <a href="/AddNewBook">Add a Book &nbsp; &nbsp;</a>
+              <a href="/DeleteABook">Delete a Book &nbsp; &nbsp;</a>
+            </div>
+    </body>
+  </html>

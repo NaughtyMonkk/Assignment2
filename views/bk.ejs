@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>1st book</title>
+    <style>
+      body{
+            background-color: black;
+          }
+    
+          a {
+            color: blue;
+            
+          }
+          h1{
+    
+            text-align: center;
+            color: white;
+            font-size: xx-large;
+            font-weight: bolder;
+            font-style: italic;
+          }
+          #main{
+            text-align: center;
+            font-size: xx-large;
+          }
+          .hey{
+            text-align: center;
+            font-weight: bold;
+            font-size: xx-large;
+            
+          }
+          p{
+            color: aqua;
+          }
+    </style> 
+
+  </head>
+  <body>  
+    <h1><%= books.name %></h1>
+    <div id="main">
+      
+      <p>Author:<%=books.author%></p>
+      <a href="<%=books.link %>""><p>Buy on Amazon!!</p></a>
+    </div>
+    <div class="hey">
+      <a href="/home">List all Books</a>
+      <a href="/AddNewBook">Add a Book</a>
+      <a href="/DeleteABook">Delete a Book</a>
+    </div>
+  </body>
+</html>
